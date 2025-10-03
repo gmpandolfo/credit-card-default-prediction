@@ -2,9 +2,14 @@
 
 # Prevenção de Inadimplência e Análise de Risco de Crédito
 
-## Tema do Projeto
-O objetivo deste projeto é prever a **inadimplência de clientes de cartão de crédito** e realizar uma análise de risco.  
-A partir do histórico de pagamento e informações financeiras, buscamos identificar clientes com maior probabilidade de não pagarem suas dívidas no próximo mês.
+## Tema do Projeto  
+Este projeto busca **prever a inadimplência de clientes de cartão de crédito** e realizar uma análise de risco com base em seu **histórico de pagamentos e informações financeiras**.
+
+## Problema  
+Instituições financeiras precisam antecipar **quais clientes representam maior risco de não pagamento**. A inadimplência afeta diretamente a lucratividade e aumenta o risco sistêmico do setor.
+
+## Objetivo  
+Desenvolver um modelo capaz de **identificar clientes com maior probabilidade de inadimplência no mês seguinte**, auxiliando a tomada de decisão na concessão de crédito e contribuindo para a **redução de perdas financeiras**.
 
 ---
 
@@ -19,15 +24,14 @@ A partir do histórico de pagamento e informações financeiras, buscamos identi
 - **Número de variáveis:** 24 (após remover a coluna `ID`)  
 
 ### Principais variáveis
+- **PAY_0 a PAY_6:** histórico de pagamento (atrasos nos últimos 6 meses)  
 - **LIMIT_BAL:** limite de crédito  
+- **BILL_AMT1 a BILL_AMT6:** valor das faturas mensais  
+- **PAY_AMT1 a PAY_AMT6:** valor dos pagamentos realizados  
+- **AGE:** idade  
 - **SEX:** sexo (1 = masculino, 2 = feminino)  
 - **EDUCATION:** nível de educação  
 - **MARRIAGE:** estado civil  
-- **AGE:** idade  
-- **PAY_0 a PAY_6:** histórico de pagamento (atrasos nos últimos 6 meses)  
-- **BILL_AMT1 a BILL_AMT6:** valor das faturas mensais  
-- **PAY_AMT1 a PAY_AMT6:** valor dos pagamentos realizados  
-- **default.payment.next.month:** variável alvo (1 = inadimplente, 0 = não inadimplente)  
 
 ---
 
@@ -79,3 +83,5 @@ No contexto de crédito, **não identificar um inadimplente** representa maior r
 - O modelo de **Random Forest** foi o mais eficaz na previsão da inadimplência, equilibrando bem recall e acurácia.  
 - O **histórico de pagamentos recentes** é o principal indicador de risco, seguido por idade e limite de crédito.  
 - Este estudo pode apoiar a **decisão na concessão de crédito**, auxiliando instituições financeiras a reduzir perdas.  
+
+Obrigado!
