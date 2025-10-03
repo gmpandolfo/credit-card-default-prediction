@@ -55,15 +55,27 @@ Foram aplicados três modelos para classificação binária (inadimplente x não
 ---
 
 ## Resultados Obtidos
+Os modelos foram avaliados com **Accuracy, Precision, Recall, F1-score e AUC-ROC**.  
+
+- **Logistic Regression:** boa acurácia, mas recall relativamente baixo para a classe 1 (inadimplentes).  
+- **Decision Tree:** fácil de interpretar, mas apresentou maior risco de overfitting e métricas menos consistentes.  
+- **Random Forest:** obteve o melhor equilíbrio geral, com boa acurácia, recall mais robusto para inadimplentes e maior AUC-ROC entre os modelos.  
+
+👉 **Métrica mais crítica:** **Recall da classe 1 (inadimplentes)**.  
+No contexto de crédito, **não identificar um inadimplente** representa maior risco financeiro do que recusar erroneamente um cliente adimplente.  
 
 ---
 
 ## Análise de Risco
+- **Variáveis mais relevantes (Random Forest):**  
+  - **PAY_0 (último status de pagamento)** → fator isolado mais preditivo.  
+  - **Idade (AGE)** → clientes mais jovens apresentam maior frequência de inadimplência.  
+  - **LIMIT_BAL (limite de crédito)** → limites mais baixos estão associados a maior risco.  
+  - **BILL_AMT (valores das faturas recentes)** → ajudam a refletir a capacidade e padrão de consumo do cliente.  
 
 ---
 
-## Conclusão
-
----
-
-## Próximos Passos
+## Conclusões
+- O modelo de **Random Forest** foi o mais eficaz na previsão da inadimplência, equilibrando bem recall e acurácia.  
+- O **histórico de pagamentos recentes** é o principal indicador de risco, seguido por idade e limite de crédito.  
+- Este estudo pode apoiar a **decisão na concessão de crédito**, auxiliando instituições financeiras a reduzir perdas.  
