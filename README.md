@@ -1,20 +1,25 @@
-# credit-card-default-prediction
-
 # Prevenção de Inadimplência e Análise de Risco de Crédito
 
-## Tema do Projeto  
-Este projeto busca **prever a inadimplência de clientes de cartão de crédito** e realizar uma análise de risco com base em seu **histórico de pagamentos e informações financeiras**.
+> Projeto desenvolvido na disciplina *Data Science Aplicada*  
+> Programa de Pós-Graduação em Computação Aplicada  
+> Universidade de Passo Fundo
+
+**Acadêmicos:**  
+- Gabriel Marculina Pandolfo — Matrícula: 183927
+- Willian Brun — Matrícula: 178810  
+
+**Link do Projeto:**
+🔗 Github: *[credit-card-default-prediction](https://github.com/gmpandolfo/credit-card-default-prediction)*
+
+
+## Tema do Projeto
+Através da análise de um dataset, este projeto busca **prever a inadimplência de clientes de cartão de crédito** e realizar uma análise de risco com base em seu **histórico de pagamentos e informações financeiras**.
 
 ## Problema  
-Instituições financeiras precisam antecipar **quais clientes representam maior risco de não pagamento**. A inadimplência afeta diretamente a lucratividade e aumenta o risco sistêmico do setor.
+⚠️ Instituições financeiras precisam antecipar **quais clientes representam maior risco de não pagamento**. A inadimplência afeta diretamente a lucratividade e aumenta o risco sistêmico do setor.
 
 ## Objetivo  
-Desenvolver um modelo capaz de **identificar clientes com maior probabilidade de inadimplência no mês seguinte**, auxiliando a tomada de decisão na concessão de crédito e contribuindo para a **redução de perdas financeiras**.
-
----
-
-## Link do Projeto
-🔗 Github: *[credit-card-default-prediction](https://github.com/gmpandolfo/credit-card-default-prediction)*
+🎯 Desenvolver um modelo capaz de **identificar clientes com maior probabilidade de inadimplência no mês seguinte**, auxiliando a tomada de decisão na concessão de crédito e contribuindo para a **redução de perdas financeiras**.
 
 ---
 
@@ -83,5 +88,3 @@ No contexto de crédito, **não identificar um inadimplente** representa maior r
 - O modelo de **Random Forest** foi o mais eficaz na previsão da inadimplência, equilibrando bem recall e acurácia.  
 - O **histórico de pagamentos recentes** é o principal indicador de risco, seguido por idade e limite de crédito.  
 - Este estudo pode apoiar a **decisão na concessão de crédito**, auxiliando instituições financeiras a reduzir perdas.  
-
-Obrigado!
